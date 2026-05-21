@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Firecrawl 抓取报告 - 常见问答页面</title>
+    <meta name="description" content="Firecrawl crawl summary for a Chinese FAQ page.">
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f6f7f9;
+        --panel: #ffffff;
+        --ink: #1e2329;
+        --muted: #5d6673;
+        --line: #d8dde5;
+        --accent: #126e82;
+        --accent-2: #9b5de5;
+        --warn: #8a5b00;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: var(--bg);
+        color: var(--ink);
+        line-height: 1.6;
+      }
+
+      main {
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 40px 20px 56px;
+      }
+
+      header {
+        padding: 12px 0 28px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      h1 {
+        margin: 0 0 12px;
+        font-size: clamp(2rem, 6vw, 4rem);
+        line-height: 1.05;
+        letter-spacing: 0;
+      }
+
+      h2 {
+        margin: 0 0 16px;
+        font-size: 1.35rem;
+        letter-spacing: 0;
+      }
+
+      p {
+        margin: 0 0 12px;
+      }
+
+      a {
+        color: var(--accent);
+        overflow-wrap: anywhere;
+      }
+
+      section {
+        margin-top: 28px;
+      }
+
+      .lede {
+        max-width: 760px;
+        color: var(--muted);
+        font-size: 1.05rem;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .card {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 18px;
+      }
+
+      .metric {
+        color: var(--muted);
+        font-size: 0.84rem;
+        text-transform: uppercase;
+      }
+
+      .value {
+        margin-top: 6px;
+        font-size: 1.5rem;
+        font-weight: 700;
+      }
+
+      .notice {
+        border-left: 4px solid var(--warn);
+        background: #fff9eb;
+      }
+
+      ul {
+        margin: 0;
+        padding-left: 20px;
+      }
+
+      li {
+        margin: 8px 0;
+      }
+
+      .links {
+        columns: 2;
+        column-gap: 28px;
+      }
+
+      .links li {
+        break-inside: avoid;
+      }
+
+      code {
+        background: #eef2f6;
+        border: 1px solid var(--line);
+        border-radius: 5px;
+        padding: 2px 5px;
+      }
+
+      .tag {
+        display: inline-flex;
+        align-items: center;
+        min-height: 28px;
+        margin: 4px 6px 4px 0;
+        padding: 3px 9px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: #fff;
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+
+      footer {
+        margin-top: 36px;
+        padding-top: 18px;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      @media (max-width: 760px) {
+        main {
+          padding: 28px 14px 42px;
+        }
+
+        .grid {
+          grid-template-columns: 1fr;
+        }
+
+        .links {
+          columns: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Firecrawl 抓取报告</h1>
+        <p class="lede">目标页面是一个中文成人伴游目录的常见问答页。本报告展示 Firecrawl 实际抓取到的元数据、状态、主要内容主题和外链，不原样镜像第三方页面全文。</p>
+      </header>
+
+      <section class="grid" aria-label="crawl metrics">
+        <article class="card">
+          <div class="metric">目标页状态</div>
+          <div class="value">HTTP 200</div>
+        </article>
+        <article class="card">
+          <div class="metric">成功抓取页数</div>
+          <div class="value">2</div>
+        </article>
+        <article class="card">
+          <div class="metric">Firecrawl Credits</div>
+          <div class="value">2</div>
+        </article>
+      </section>
+
+      <section class="card notice">
+        <h2>抓取结果</h2>
+        <p>第一次使用严格单页 crawl 时返回空数据。第二次放宽为 <code>maxDiscoveryDepth: 1</code> 并关闭 main-content 限制后，Firecrawl 抓到了目标 FAQ 页面和一个 sitemap 派生页面。</p>
+        <p>源页面：<a href="https://sgcn.qc52.me/%E5%B8%B8%E8%A7%81%E9%97%AE%E7%AD%94.html">https://sgcn.qc52.me/常见问答.html</a></p>
+      </section>
+
+      <section class="card">
+        <h2>页面元数据</h2>
+        <p><strong>标题：</strong>新加坡伴游常见问题解答｜新加坡本地援交指南</p>
+        <p><strong>描述：</strong>不清楚如何在新加坡约会援交女孩？阅读本页，获取完整伴游导航解答与陪游援交安全建议。</p>
+        <p><strong>语言：</strong>zh-SG</p>
+        <p><strong>内容类型：</strong>text/html; charset=utf-8</p>
+      </section>
+
+      <section class="card">
+        <h2>主要内容主题</h2>
+        <span class="tag">认证与真实性</span>
+        <span class="tag">预约沟通</span>
+        <span class="tag">付款提醒</span>
+        <span class="tag">隐私与安全</span>
+        <span class="tag">投诉反馈</span>
+        <span class="tag">外出服务</span>
+        <span class="tag">按摩院与 SPA</span>
+        <span class="tag">站点联系方式</span>
+        <ul>
+          <li>页面解释了“认证视频”和蓝色认证标记等真实性信号。</li>
+          <li>页面强调平台只是信息目录，不代替用户预约。</li>
+          <li>页面多次提醒不要提前转账，建议见到本人后再付款。</li>
+          <li>页面讨论了不回复、取消预约、迟到、照片差异和服务不满意等常见情况。</li>
+          <li>页面包含大量 Telegram、目录站、社交分享和相关站点链接。</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Firecrawl 发现的部分链接</h2>
+        <ul class="links">
+          <li><a href="https://sgcn.qc52.me/">sgcn.qc52.me</a></li>
+          <li><a href="https://t.me/sgharem_channel3/">Telegram channel</a></li>
+          <li><a href="https://sgharem10.net/">sgharem10.net</a></li>
+          <li><a href="https://t.me/sg_spa2">sg_spa2</a></li>
+          <li><a href="https://n2tt.site/">n2tt.site</a></li>
+          <li><a href="https://cn.sgharem.org/">cn.sgharem.org</a></li>
+          <li><a href="https://qc52-12.com/">qc52-12.com</a></li>
+          <li><a href="https://www.shichengbbs.com/c97">shichengbbs.com/c97</a></li>
+          <li><a href="https://sglonelyguy.site/">sglonelyguy.site</a></li>
+          <li><a href="https://shiok8.site/">shiok8.site</a></li>
+          <li><a href="https://xfy8.site/">xfy8.site</a></li>
+          <li><a href="https://isyou.site/">isyou.site</a></li>
+        </ul>
+      </section>
+
+      <footer>
+        <p>生成日期：2026-05-21。结构化摘要见 <a href="data/firecrawl-summary.json">data/firecrawl-summary.json</a>。</p>
+      </footer>
+    </main>
+  </body>
+</html>
