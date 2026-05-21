@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" role="img" aria-labelledby="title desc">
+  <title id="title">TIANYAO logo</title>
+  <desc id="desc">Dark square logo with rose gold crescent, star mark, and TIANYAO wordmark.</desc>
+  <defs>
+    <linearGradient id="rose" x1="170" y1="150" x2="470" y2="510" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff2f2"/>
+      <stop offset="0.34" stop-color="#e9c0c7"/>
+      <stop offset="0.68" stop-color="#9e6672"/>
+      <stop offset="1" stop-color="#f8dfe3"/>
+    </linearGradient>
+    <linearGradient id="softRose" x1="130" y1="120" x2="480" y2="500" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f7dce2"/>
+      <stop offset="1" stop-color="#8d5966"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="640" height="640" fill="#150a12"/>
+  <rect width="640" height="640" fill="#0f070d" opacity="0.46"/>
+  <g filter="url(#glow)">
+    <path d="M380 171C299 154 215 203 184 281c-35 87 8 188 94 225 52 22 110 17 156-11-55 16-118 3-160-39-63-63-63-165 0-228 31-31 70-47 111-48-2-3-3-6-5-9Z" fill="none" stroke="url(#softRose)" stroke-width="14" stroke-linecap="round"/>
+    <path d="M376 183C317 178 251 220 225 287c-32 82 4 173 79 213" fill="none" stroke="url(#rose)" stroke-width="5" stroke-linecap="round" opacity="0.88"/>
+    <path d="M323 132C323 132 320 245 267 284 231 311 190 312 190 312c0 0 75 4 108 36 31 31 25 91 25 91s0-74 38-104c34-27 91-23 91-23s-64-5-95-38c-32-34-34-142-34-142Z" fill="none" stroke="url(#rose)" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M323 245c-11 30-29 52-55 68 28 8 48 24 60 50 11-29 29-49 55-62-27-9-47-28-60-56Z" fill="#f8e5e7" opacity="0.1"/>
+    <path d="M400 196c6 22 18 34 38 39-20 5-32 18-38 40-6-22-18-35-38-40 20-5 32-17 38-39Z" fill="#f9e6e9"/>
+  </g>
+  <text x="320" y="460" text-anchor="middle" font-family="Didot, Bodoni 72, Georgia, serif" font-size="56" letter-spacing="24" fill="#f3dce0">TIANYAO</text>
+</svg>
