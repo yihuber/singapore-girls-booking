@@ -1,6 +1,8 @@
 {
   "generatedAt": "2026-05-21",
   "sourceUrl": "https://sgcn.qc52.me/%E5%B8%B8%E8%A7%81%E9%97%AE%E7%AD%94.html",
+  "publicationMode": "authorized_full_static_mirror",
+  "authorizationNote": "The user stated that this is their website and they have the right to republish the page.",
   "firecrawl": {
     "initialCrawl": {
       "status": "completed",
@@ -11,9 +13,9 @@
     },
     "successfulCrawl": {
       "status": "completed",
-      "completed": 2,
-      "total": 2,
-      "creditsUsed": 2
+      "completed": 1,
+      "total": 1,
+      "creditsUsed": 1
     }
   },
   "targetPage": {

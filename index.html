@@ -1,245 +1,644 @@
-<!doctype html>
-<html lang="zh-CN">
-  <head>
+<!DOCTYPE html>
+<html lang="zh-SG">
+
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DCCCYBV72D"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-DCCCYBV72D');
+    </script>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Firecrawl 抓取报告 - 常见问答页面</title>
-    <meta name="description" content="Firecrawl crawl summary for a Chinese FAQ page.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="canonical" href="https://sgcn.qc52.me/常见问答.html">
+    <link rel="alternate" hreflang="en-SG" href="https://qc52.me/qna.html">
+    <link rel="alternate" hreflang="zh-SG" href="https://sgcn.qc52.me/常见问答.html">
+    <link rel="alternate" hreflang="x-default" href="https://qc52.me/qna.html">
+    <title>新加坡伴游常见问题解答｜新加坡本地援交指南</title>
+    <meta name="keywords" content="伴游常见问题, 新加坡援交, 约会指南, 本地陪游小姐" />
+    <meta name="description" content="不清楚如何在新加坡约会援交女孩？阅读本页，获取完整伴游导航解答与陪游援交安全建议。" />
+    <link rel='icon' href='https://miuohcetrjihx34xc.com/static/img/icon.png'>
+
+    <!-- 社交分享优化（Open Graph） -->
+    <meta property="og:title" content="新加坡伴游常见问题解答｜新加坡本地援交指南">
+    <meta property="og:image" content="https://miuohcetrjihx34xc.com/static/img/icon.png">
+    <meta property="og:description" content="不清楚如何在新加坡约会援交女孩？阅读本页，获取完整伴游导航解答与陪游援交安全建议。">
+    <meta property="og:url" content="https://sgcn.qc52.me/常见问答.html">
+    <meta property="og:site_name" content="新加坡伴游网·中文站">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel='stylesheet' href='https://miuohcetrjihx34xc.com/static/css/articles.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <style>
-      :root {
-        color-scheme: light;
-        --bg: #f6f7f9;
-        --panel: #ffffff;
-        --ink: #1e2329;
-        --muted: #5d6673;
-        --line: #d8dde5;
-        --accent: #126e82;
-        --accent-2: #9b5de5;
-        --warn: #8a5b00;
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      body {
-        margin: 0;
-        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-        background: var(--bg);
-        color: var(--ink);
-        line-height: 1.6;
-      }
-
-      main {
-        max-width: 1080px;
-        margin: 0 auto;
-        padding: 40px 20px 56px;
-      }
-
-      header {
-        padding: 12px 0 28px;
-        border-bottom: 1px solid var(--line);
-      }
-
-      h1 {
-        margin: 0 0 12px;
-        font-size: clamp(2rem, 6vw, 4rem);
-        line-height: 1.05;
-        letter-spacing: 0;
-      }
-
-      h2 {
-        margin: 0 0 16px;
-        font-size: 1.35rem;
-        letter-spacing: 0;
-      }
-
-      p {
-        margin: 0 0 12px;
-      }
-
-      a {
-        color: var(--accent);
-        overflow-wrap: anywhere;
-      }
-
-      section {
-        margin-top: 28px;
-      }
-
-      .lede {
-        max-width: 760px;
-        color: var(--muted);
-        font-size: 1.05rem;
-      }
-
-      .grid {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 14px;
-      }
-
-      .card {
-        background: var(--panel);
-        border: 1px solid var(--line);
-        border-radius: 8px;
-        padding: 18px;
-      }
-
-      .metric {
-        color: var(--muted);
-        font-size: 0.84rem;
-        text-transform: uppercase;
-      }
-
-      .value {
-        margin-top: 6px;
-        font-size: 1.5rem;
-        font-weight: 700;
-      }
-
-      .notice {
-        border-left: 4px solid var(--warn);
-        background: #fff9eb;
-      }
-
-      ul {
-        margin: 0;
-        padding-left: 20px;
-      }
-
-      li {
-        margin: 8px 0;
-      }
-
-      .links {
-        columns: 2;
-        column-gap: 28px;
-      }
-
-      .links li {
-        break-inside: avoid;
-      }
-
-      code {
-        background: #eef2f6;
-        border: 1px solid var(--line);
-        border-radius: 5px;
-        padding: 2px 5px;
-      }
-
-      .tag {
-        display: inline-flex;
-        align-items: center;
-        min-height: 28px;
-        margin: 4px 6px 4px 0;
-        padding: 3px 9px;
-        border: 1px solid var(--line);
-        border-radius: 999px;
-        background: #fff;
-        color: var(--muted);
-        font-size: 0.9rem;
-      }
-
-      footer {
-        margin-top: 36px;
-        padding-top: 18px;
-        border-top: 1px solid var(--line);
-        color: var(--muted);
-        font-size: 0.92rem;
-      }
-
-      @media (max-width: 760px) {
-        main {
-          padding: 28px 14px 42px;
+        :root {
+            --bg: #f7f8fb;
+            --card: #ffffff;
+            --line: #d9e0ea;
+            --text: #1d2a3a;
+            --muted: #5f6f82;
+            --accent: #c50909;
+            --radius: 14px;
         }
 
-        .grid {
-          grid-template-columns: 1fr;
+        * {
+            box-sizing: border-box;
         }
 
-        .links {
-          columns: 1;
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: var(--bg);
+            color: var(--text);
+            font-family: "Noto Sans SC", "Noto Sans", "Segoe UI", sans-serif;
         }
-      }
+
+        .page {
+            width: min(1080px, calc(100% - 24px));
+            margin: 0 auto;
+            padding: 16px 0 28px;
+        }
+
+        .hero,
+        .search-panel,
+        .link-panel,
+        .faq-panel {
+            background: var(--card);
+            border: 1px solid var(--line);
+            border-radius: var(--radius);
+        }
+
+        .hero {
+            text-align: center;
+            padding: 18px 16px;
+        }
+
+        .hero img {
+            height: 76px;
+            width: auto;
+            border-radius: 10px;
+            border: 1px solid var(--line);
+            background: #fff;
+        }
+
+        .hero h2 {
+            margin: 12px 0 0;
+            color: var(--accent);
+            font-size: 1.6rem;
+        }
+
+        .search-panel,
+        .link-panel,
+        .faq-panel {
+            margin-top: 12px;
+            padding: 14px;
+        }
+
+        .search-box {
+            width: min(100%, 680px);
+            height: 42px;
+            padding: 0 12px;
+            border: 1px solid var(--line);
+            border-radius: 10px;
+            font-size: 16px;
+            color: var(--text);
+            display: block;
+            margin: 0 auto;
+            outline: none;
+            background: #fff;
+        }
+
+        .search-box:focus {
+            border-color: #bfccdd;
+            box-shadow: 0 0 0 3px #eef4ff;
+        }
+
+        .link-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 8px;
+        }
+
+        .link-container a {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            min-height: 40px;
+            padding: 0 12px;
+            border: 1px solid var(--line);
+            border-radius: 10px;
+            text-decoration: none;
+            color: var(--text);
+            background: #fff;
+            font-size: 14px;
+        }
+
+        .faq-container {
+            width: 100%;
+            margin: 0 auto;
+            display: grid;
+            gap: 10px;
+        }
+
+        .faq-item {
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            overflow: hidden;
+            background: #fff;
+        }
+
+        .faq-question {
+            cursor: pointer;
+            padding: 12px;
+            background: #f4f7fc;
+            font-weight: 700;
+            color: var(--accent);
+            font-size: 18px;
+            text-align: left;
+            line-height: 1.5;
+        }
+
+        .faq-answer {
+            display: none;
+            padding: 12px;
+            color: var(--text);
+            font-size: 16px;
+            line-height: 1.7;
+            text-align: left;
+        }
+
+        .faq-answer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .faq-answer a:hover {
+            text-decoration: underline;
+        }
+
+        #footer {
+            margin-top: 12px;
+            background: #7E0C0C;
+            color: white;
+            padding: 20px 14px;
+            text-align: center;
+            border-radius: var(--radius);
+        }
+
+        #footer p {
+            margin: 10px 0;
+            line-height: 1.7;
+        }
+
+        #footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 720px) {
+            .page {
+                width: min(100% - 14px, 1080px);
+                padding-top: 10px;
+            }
+
+            .hero,
+            .search-panel,
+            .link-panel,
+            .faq-panel,
+            #footer {
+                border-radius: 12px;
+            }
+
+            .hero {
+                padding: 14px;
+            }
+
+            .hero img {
+                height: 64px;
+            }
+
+            .hero h2 {
+                font-size: 1.35rem;
+            }
+
+            .faq-question {
+                font-size: 16px;
+            }
+
+            .faq-answer {
+                font-size: 15px;
+            }
+        }
     </style>
-  </head>
-  <body>
-    <main>
-      <header>
-        <h1>Firecrawl 抓取报告</h1>
-        <p class="lede">目标页面是一个中文成人伴游目录的常见问答页。本报告展示 Firecrawl 实际抓取到的元数据、状态、主要内容主题和外链，不原样镜像第三方页面全文。</p>
-      </header>
+</head>
 
-      <section class="grid" aria-label="crawl metrics">
-        <article class="card">
-          <div class="metric">目标页状态</div>
-          <div class="value">HTTP 200</div>
-        </article>
-        <article class="card">
-          <div class="metric">成功抓取页数</div>
-          <div class="value">2</div>
-        </article>
-        <article class="card">
-          <div class="metric">Firecrawl Credits</div>
-          <div class="value">2</div>
-        </article>
-      </section>
+<body>
+    <main class="page">
+        <header class="hero">
+            <a href="https://sgcn.qc52.me/" title="新加坡伴游网·中文陪游导航站">
+                <img src='https://miuohcetrjihx34xc.com/static/img/icon.png' alt='新加坡伴游网·中文陪游导航站 图标'>
+            </a>
+            <h2> 常见问题 QnA：</h2>
+        </header>
 
-      <section class="card notice">
-        <h2>抓取结果</h2>
-        <p>第一次使用严格单页 crawl 时返回空数据。第二次放宽为 <code>maxDiscoveryDepth: 1</code> 并关闭 main-content 限制后，Firecrawl 抓到了目标 FAQ 页面和一个 sitemap 派生页面。</p>
-        <p>源页面：<a href="https://sgcn.qc52.me/%E5%B8%B8%E8%A7%81%E9%97%AE%E7%AD%94.html">https://sgcn.qc52.me/常见问答.html</a></p>
-      </section>
+        <section class="search-panel" aria-label="搜索问答">
+            <input type="text" id="faqSearch" class="search-box" placeholder="搜索问题...">
+        </section>
 
-      <section class="card">
-        <h2>页面元数据</h2>
-        <p><strong>标题：</strong>新加坡伴游常见问题解答｜新加坡本地援交指南</p>
-        <p><strong>描述：</strong>不清楚如何在新加坡约会援交女孩？阅读本页，获取完整伴游导航解答与陪游援交安全建议。</p>
-        <p><strong>语言：</strong>zh-SG</p>
-        <p><strong>内容类型：</strong>text/html; charset=utf-8</p>
-      </section>
+        <section class="link-panel" aria-label="常用链接">
+            <div class="link-container">
+                <a href="https://t.me/sgharem_channel3/" target="_blank">
+                    <i class="fab fa-telegram-plane"></i> Sgharem援交频道
+                </a>
+                <a href="https://sgharem10.net/" target="_blank">
+                    <i class="fas fa-link"></i> SGHarem 官网
+                </a>
+                <a href="https://t.me/sg_spa2" target="_blank">
+                    <i class="fab fa-telegram-plane"></i> @新加坡按摩分享
+                </a>
+                <a href="https://n2tt.site/" target="_blank">
+                    <i class="fas fa-link"></i> N2TT 入口
+                </a>
+            </div>
+        </section>
 
-      <section class="card">
-        <h2>主要内容主题</h2>
-        <span class="tag">认证与真实性</span>
-        <span class="tag">预约沟通</span>
-        <span class="tag">付款提醒</span>
-        <span class="tag">隐私与安全</span>
-        <span class="tag">投诉反馈</span>
-        <span class="tag">外出服务</span>
-        <span class="tag">按摩院与 SPA</span>
-        <span class="tag">站点联系方式</span>
-        <ul>
-          <li>页面解释了“认证视频”和蓝色认证标记等真实性信号。</li>
-          <li>页面强调平台只是信息目录，不代替用户预约。</li>
-          <li>页面多次提醒不要提前转账，建议见到本人后再付款。</li>
-          <li>页面讨论了不回复、取消预约、迟到、照片差异和服务不满意等常见情况。</li>
-          <li>页面包含大量 Telegram、目录站、社交分享和相关站点链接。</li>
-        </ul>
-      </section>
+        <section class="faq-panel" aria-label="常见问题列表">
+            <div class="faq-container">
 
-      <section class="card">
-        <h2>Firecrawl 发现的部分链接</h2>
-        <ul class="links">
-          <li><a href="https://sgcn.qc52.me/">sgcn.qc52.me</a></li>
-          <li><a href="https://t.me/sgharem_channel3/">Telegram channel</a></li>
-          <li><a href="https://sgharem10.net/">sgharem10.net</a></li>
-          <li><a href="https://t.me/sg_spa2">sg_spa2</a></li>
-          <li><a href="https://n2tt.site/">n2tt.site</a></li>
-          <li><a href="https://cn.sgharem.org/">cn.sgharem.org</a></li>
-          <li><a href="https://qc52-12.com/">qc52-12.com</a></li>
-          <li><a href="https://www.shichengbbs.com/c97">shichengbbs.com/c97</a></li>
-          <li><a href="https://sglonelyguy.site/">sglonelyguy.site</a></li>
-          <li><a href="https://shiok8.site/">shiok8.site</a></li>
-          <li><a href="https://xfy8.site/">xfy8.site</a></li>
-          <li><a href="https://isyou.site/">isyou.site</a></li>
-        </ul>
-      </section>
+                <div class="faq-item">
+                    <div class="faq-question">问：什么是认证视频？</div>
+                    <div class="faq-answer">
+                        答：认证视频是伴游小姐姐手持新币（SGD）拍摄的视频，用来证明她本人真实存在，并非使用网上图片。通过认证的伴游小姐会带有蓝色“已认证”标记。您也可以在我们的公开频道 <a
+                            href="https://t.me/sgharem_channel3">@qc52dotme</a> 查看所有认证视频。</div>
+                </div>
 
-      <footer>
-        <p>生成日期：2026-05-21。结构化摘要见 <a href="data/firecrawl-summary.json">data/firecrawl-summary.json</a>。</p>
-      </footer>
+                <div class="faq-item">
+                    <div class="faq-question">问：怎么预约？</div>
+                    <div class="faq-answer">答：直接发短信或打电话联系小姐。有些陪游小姐支持 WhatsApp，但不是全部。不需要通过中介，请直接给女孩子发短信打电话。</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">问：我不会说小姐的语言怎么办？</div>
+                    <div class="faq-answer">答：可以用 Google 翻译，或者换一位沟通更顺畅的陪游小姐。这种情况只能自行处理。</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">问：陪游小姐不回复我的短信或电话怎么办？</div>
+                    <div class="faq-answer">答：接不接电话是陪游小姐个人意愿，您可以耐心等回复，或者换个伴游小姐姐。有些陪游小姐不接新客或短信记录不好的客人。</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">问：怎么知道陪游小姐有没有认证？</div>
+                    <div class="faq-answer">答：通过认证的陪游小姐在封面图片右上角会有蓝色认证标志。您也可以在频道内搜索她的编号，看是否有认证视频。</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">问：如果照片和真人不一样怎么办？</div>
+                    <div class="faq-answer">答：您可以选择离开并且拒绝支付，并在平台留言提醒其他兄弟，以免浪费时间。在见到真人之前可以不要付钱</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">问：如果网站打不开怎么办？</div>
+                    <div class="faq-answer">答：可以 Google 搜索 “sgcn.qc52.me”，或者等待我们发布新网址。因为部分陪游小姐上传裸照，网站有时会被 IMDA 自动屏蔽。
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">问：您有我这一区的伴游小姐吗？</div>
+                    <div class="faq-answer">答：您可以直接在网站的搜索栏输入地点关键词就可以查看对应的伴游小姐。</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">问：FJ 和 HJ 是什么意思？</div>
+                    <div class="faq-answer">答：FJ 是 Full Job，表示可以发生性关系；HJ 是 Hand Job，表示只提供按摩与手服务。部分小姐也提供 BJ（口交）。</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">问：付款方式？</div>
+                    <div class="faq-answer">答：只支持现金上门付款，务必见到真人后再付款，避免被骗。</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">问：为什么有些伴游小姐会被标注“慎选”？</div>
+                    <div class="faq-answer">答：被多次投诉照片造假或服务差的伴游小姐会被标记为“慎选”，是为了让所有兄弟有更好的使用体验。</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">问：您们平台有高的、矮的、胖的、瘦的伴游小姐吗？</div>
+                    <div class="faq-answer">答：请您自行按自己的喜好搜索筛选，平台只是展示陪游导航信息，管理员不是中介 。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">问：你们网站合法吗？找你们网站的陪游小姐是否违法？</div>
+                    <div class="faq-answer">答：在新加坡，性交易本身是合法的，只要小姐是满 18
+                        岁的合法成年人。我们强烈反对未成年服务！不过，通过网络与金钱挂钩的找小姐行为目前仍未被正式合法化。如果你在私人住宅与兼职小姐进行活动，不会被起诉，但可能会被要求协助调查。</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">问：我迷路了！找不到之前约过的伴游小姐！这个网站太复杂了怎么办！</div>
+                    <div class="faq-answer">
+                        答：别慌，兄弟！页面右上角有搜索栏，只需输入小姐的名字或联系方式即可查找。也可以用关键词如“东北”、“中部”、“西部”等定位区域。注意：部分小姐会使用重复名称，如果找不到可能是她已经离开或不再投放广告。
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">问：我该如何预约？你们能帮我预约吗？我不方便用自己电话联络！</div>
+                    <div class="faq-answer">
+                        答：我们只是一个信息平台，无法代为预约。请直接通过广告上的电话号码短信或电话联系小姐。如能说中文请尽量使用中文沟通，若只能讲英文，请寻找会讲英文的小姐。预约后请准时赴约，如需取消务必提前通知小姐。请准备足够现金，小姐一般不接受信用卡或转账。不文明信息可能会导致被拉黑。是否能有更深入的服务需看你与小姐的化学反应。私人号码或座机基本不会被接听，如不方便用自己手机号，请考虑使用预付卡。
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">问：靠北！我预约了90分钟但只用了60分钟，小姐还是要收全价！太夸张了！</div>
+                    <div class="faq-answer">
+                        答：我们理解你可能临时有急事，但请体谅小姐为你保留了这段时间，也拒绝了其他预约。就像你预约90分钟的面部护理，提早离开也不会要求退费一样。如果你的行程不确定，建议先预约60分钟，如果有空档再加时会更合理。
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">问：你们说的“兼职小姐”是什么意思？你们控制她们吗？</div>
+                    <div class="faq-answer">
+                        答：“兼职”意思是这些小姐是自由身份（签证或工作准证）下自行接单，不受我们安排或控制。我们不干涉她们住哪、赚多少。这些伴游小姐通常只接受上门服务（你去她的单位），不提供上门到住家/酒店/车内服务（个别有例外）。
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">问：你们网站和其他类似网站有关系吗？</div>
+                    <div class="faq-answer">答：没有，我们与其他网站毫无关系。有些网站抄袭我们的格式、文案，甚至资料。请勿误会我们有多个或“分站”。</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">问：你们平台的伴游小姐健康安全吗？她们有做健康检查吗？</div>
+                    <div class="faq-answer">答：我们不是 Geylang
+                        的“鱼缸”那种强制健康检查场所。但据我们了解，大多数伴游小姐每年或每两年会做一次体检，比普通人还频繁一些。当然，风险永远存在，我们平台主要是按摩信息分享，其他服务则视双方沟通和默契而定。
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">问：为什么有些服务在援交小姐广告中是红色字体？</div>
+                    <div class="faq-answer">答：红色字体表示该服务是援交小姐的主打或热门服务。黑色字体不代表做不好，只是有些服务较难在短时间内展示全部。平台无法保证你一定满意，请理解。</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">问：我已经预约了，但小姐临时取消了！</div>
+                    <div class="faq-answer">
+                        答：我们确实收到过类似投诉。作为兼职陪游小姐，她们有权自由接单或拒单。请体谅，有些是新来者，语言沟通也可能有障碍。建议你在出发前确认好预约。有时临时突发情况（如扫黄、手机欠费或私人问题）也会影响行程。有时候信息太多她们可能会忘记，但多数都会解释并表达歉意。
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">问：为什么没人回复我的电话或短信？</div>
+                    <div class="faq-answer">答：兼职陪游小姐使用自动系统（如
+                        WeChat）来过滤陌生或可疑号码。如果你曾提出不礼貌要求（如砍价、问特殊服务），号码可能被标记负面。这是她们自行管理的系统，我们无法干预。如果你是新号或换了号码，也可能影响接单率。有些小姐也可能休息、回国或暂时停止服务未通知我们。
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">问：管理员，我从没为难过任何陪游小姐，每次都给小费，但这次有个小姐问了我一堆问题，就因为我在预约记录中只有两次好评，真的很烦！我们根本没做错什么！
+                    </div>
+                    <div class="faq-answer">
+                        答：小姐加入的微信群都有预约记录，她们会记录每次客户的互动，就像你会参考论坛和评论一样。这是一种双方互相保护的机制。如果你觉得不愉快，可以换其他陪游小姐。沟通不顺有时会让你的号码被贴上“黑名单”。别太纠结，把它当作业力，或许对方以后会因为客人少而反思或离开这行业。人生苦短，还是多追求开心的体验吧。
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">问：陪游小姐的照片是修图的吗？为什么真人差这么多？</div>
+                    <div class="faq-answer">答：现在很多照片都会用美颜、打光或修图处理。有些是她们在家乡拍的工作室照，虽然真实，但跟本人会有差异。建议心里预期降低
+                        10%-40%。也有小姐长得和照片一样，甚至更好看。有时原定小姐临时接太多单，会派她朋友出来替补，这不是我们安排的，我们已警告陪游小姐避免此类行为。</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">问：什么是 MP / SPA？我不喜欢去那边，又贵又坑，为啥你们还推广？</div>
+                    <div class="faq-answer">答：MP 是按摩院（Massage Parlour）的缩写，SPA 也类似。我们知道那边收费高，通常入场费
+                        $30~$50，特殊服务另算。有些小姐因住宿等问题只能在 MP 上班，并需与店家分佣，甚至每位客人只能赚 $30-$50。所以额外收费也是她们辛苦工作的合理补偿。请体谅她们的工作不易。
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">问：我有个人问题或投诉，怎么联系你们？</div>
+                    <div class="faq-answer">答：你可以在 Telegram 群组 <a href="https://t.me/sgharem_channel3"
+                            target="_blank">@sgharem_channel3</a> 中留言，我们会定期查看。</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">问：使用网站遇到问题怎么联络你们？</div>
+                    <div class="faq-answer">答：如有技术问题或打不开网页，可以 Google 搜索 SGHarem，或加入我们的 <a
+                            href='https://t.me/sgharem_channel3'>Telegram 群组</a> 获取最新公告与网址更新。也可以联系管理员 @mai_quyenn</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">问：如果我对服务或陪游小姐不满意怎么办？</div>
+                    <div class="faq-answer">答：建议你先直接和小姐沟通，看能否解决问题。如果无法解决，也欢迎你在 sgharem10.net 或 sgxy13.com
+                        平台留言反馈，我们会进行跟进与改进。
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">问：兼职陪游小姐是否提供外出服务？</div>
+                    <div class="faq-answer">答：部分小姐提供外出服务（Outcall），但不是全部。请查看她们个人页面的详细资料，或直接联系管理员@De0n22确认安排。</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">问：你们有提供评论或评分系统吗？</div>
+                    <div class="faq-answer">答：目前我们尚未建立正式的评分系统。但你可以在社区中询问其他用户的评价，了解该陪游小姐的实际表现。</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">问：如何避免被骗？</div>
+                    <div class="faq-answer">答：务必选择已认证的陪游小姐。切勿提前转账付款，并优先选择公开、安全的会面场所。如果你有任何可疑情况，欢迎随时联系支持协助。</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">问：我想预约的时间比列表上短或长，可以吗？</div>
+                    <div class="faq-answer">答：大部分陪游小姐的时间安排是弹性的，但最好提前沟通确认。如果你想缩短或延长时间，请提前和陪游小姐商量，避免误会。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">问：我该如何保护自己预约时的隐私？</div>
+                    <div class="faq-answer">答：建议不要提供真实姓名、住址或工作单位等个人信息。你可以使用一次性手机号，或使用 WhatsApp 等加密通讯工具来联系陪游小姐。</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">问：服务结束后还会有额外收费吗？</div>
+                    <div class="faq-answer">答：页面上显示的价格一般是全部服务的费用。但有些陪游小姐在过程中可能会提供额外服务，需另外收费。请在服务开始前确认清楚价格，避免误会
+                        记住您随时可以拒绝。
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">问：可以预约陪游小姐去我家或酒店提供服务吗？</div>
+                    <div class="faq-answer">答：部分小姐提供外出（Outcall）服务，但并非所有人都接受。请查看陪游小姐的个人页面或直接向她询问确认。</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">问：如果过程中我感到不舒服或有安全顾虑怎么办？</div>
+                    <div class="faq-answer">答：如果你感到任何不适或不安全，有权随时终止服务。礼貌地告知对方即可。请始终把自己的安全放在第一位，如有严重问题也可向平台反馈。</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">问：我可以预约多个伴游小姐同时服务吗？</div>
+                    <div class="faq-answer">答：部分小姐可能接受多人预约，但这需依照个人意愿而定。请事先与她们沟通确认。</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">问：如果我要取消或更改预约时间该怎么办？</div>
+                    <div class="faq-answer">答：如需取消或改期，请尽早通知小姐，大多数伴游小姐会很感激你的体谅。若临时取消，可能会影响你的信用记录或被要求支付一定费用。</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">问：我可以要求一些特别服务比如 BDSM 或角色扮演吗？</div>
+                    <div class="faq-answer">答：每位伴游小姐有不同的服务范围和底线，请尊重她们的意愿。如有特别需求，请提前沟通。切勿强迫对方接受不愿意的服务。</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">问：有折扣或优惠活动吗？</div>
+                    <div class="faq-answer">答：部分伴游小姐可能会对熟客或特殊时期提供折扣。可以在她们的介绍中查看，或直接询问是否有优惠。</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">问：我可以帮别人预约吗？</div>
+                    <div class="faq-answer">答：可以，但请务必提前告知伴游小姐实际到场的人是谁，以免造成误会或沟通障碍。</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">问：如果伴游小姐迟到了怎么办？</div>
+                    <div class="faq-answer">答：请理解可能有突发情况导致延误，先联系小姐确认情况。如果等待时间过长无法接受，你可以选择改约或换人。</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">问：我可以带饮料或食物过去吗？</div>
+                    <div class="faq-answer">答：这取决于伴游小姐的规定。有些可能可以接受，有些则不允许。最好提前询问避免尴尬。</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">问：小姐是否有年龄限制？</div>
+                    <div class="faq-answer">答：我们平台所有援交小姐都必须年满18岁。如你怀疑某人未成年，请立即举报，我们会严肃处理。</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">问：我怎么知道某位援交小姐在某个时间是否有空？</div>
+                    <div class="faq-answer">答：每位援交小姐的空档时间不同，建议查看她的个人信息页或直接联系确认她是否在你想预约的时间段有空。</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">问：可以刷卡付款吗？</div>
+                    <div class="faq-answer">答：不可以，目前只接受现金付款，且需在见到本人后付款。请确保带足现金。</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">问：可以提前付款吗？安全吗？</div>
+                    <div class="faq-answer">答：强烈建议只在见到本人后才付款。切勿提前转账，以免被骗。</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">问：如果见到小姐后我改变主意了怎么办？</div>
+                    <div class="faq-answer">答：如果你决定不继续服务，是可以拒绝付款的。但请礼貌说明，尊重对方的时间与安排。</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">问：所有援交小姐都提供外出服务吗？</div>
+                    <div class="faq-answer">答：大多数小姐只接受上门服务（Incall），是否提供外出服务（Outcall）请直接和她们确认。</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">问：如果援交小姐真人和照片差很多怎么办？</div>
+                    <div class="faq-answer">答：如果差距太大你不想继续，是有权选择不进行服务的。请保持尊重并清楚表达你的立场。</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">问：如果服务不满意可以要求退款吗？</div>
+                    <div class="faq-answer">答：一般不提供退款。你付费的是她们的时间和服务。如感到不满，你可以选择结束服务或与对方沟通。</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">问：可以和援交小姐讨价还价吗？</div>
+                    <div class="faq-answer">答：你可以提前问清楚价格，但请尊重双方已达成的价格协议。见面后再砍价是不礼貌的行为。</div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <footer style="background-color: #7E0C0C; color: white; padding: 20px 0; text-align: center;" id="footer">
+            <p style="font-weight: bold; font-size: 18px; color: white;">Quick Links</p>
+            <p>
+                <a href="https://cn.sgharem.org" target="_blank" title="新加坡后宫网网站" style="color: white;">新加坡后宫网</a> |
+                <a href="https://t.me/sgharem2bot" target="_blank" title="后宫网选妃机器人" style="color: white;">后宫网选妃机器人</a> |
+                <a href="https://beacons.ai/4ni52" target="_blank" title="4ni52网" style="color: white;">4ni52网</a> |
+                <a href="https://x.com/oneimpmm643" target="_blank" title="陌陌时代 Twitter" style="color: white;">陌陌时代</a>
+            </p>
+            <p>
+                <a href="https://bio.link/shiok88" target="_blank" title="Shiok8 爽吧 BioLinks"
+                    style="color: white;">Shiok8 爽吧 BioLinks</a> |
+                <a href="http://sgyuepao.com/" target="_blank" title="新加坡约炮网" style="color: white;">新加坡约炮网</a> |
+                <a href="https://taplink.cc/sgxiaoyao" target="_blank" title="逍遥阁" style="color: white;">逍遥阁</a> |
+                <a href="https://linktr.ee/shiok8" target="_blank" title="爽吧 LinkTree" style="color: white;">爽吧</a> |
+                <a href="https://qc52-12.com/" target="_blank" title="倾城网" style="color: white;">倾城网</a> |
+                <a href="https://www.shichengbbs.com/c97" target="_blank" title="新加坡按摩" style="color: white;">新加坡按摩</a>
+            </p>
+
+
+
+            <p>
+                <a href="https://sglonelyguy.site" target="_blank" title="寂寞男人网官网" style="color: white;">寂寞男人网</a> |
+                <a href="https://linktr.ee/ttvip" target="_blank" title="TT网 LinkTree" style="color: white;">TT网</a> |
+                <a href="https://sgharem-6.net" target="_blank" title="后宫网" style="color: white;">后宫网</a> |
+                <a href="https://shichengbbs.site" target="_blank" title="狮城BBS" style="color: white;">狮城BBS</a> |
+                <a href="https://linktr.ee/geylang_666" target="_blank" title="芽笼666 LinkTree"
+                    style="color: white;">芽笼666</a> |
+                <a href="https://shiok8.site" target="_blank" title="爽吧官网" style="color: white;">爽吧</a> |
+                <a href="https://xfy8.site" target="_blank" title="幸福缘官网" style="color: white;">幸福缘</a>
+            </p>
+
+            <p>
+                <a href="https://isyou.site" target="_blank" title="是您网 (IsYou)" style="color: white;">是您网</a> |
+                <a href="https://sgbeautycastle.site" target="_blank" title="美丽城堡" style="color: white;">美丽城堡</a> |
+                <a href="https://beacons.ai/sglonelyguy" target="_blank" title="寂寞男人网 Beacons"
+                    style="color: white;">寂寞男人网</a> |
+                <a href="https://linktr.ee/oneimpmm" target="_blank" title="陌陌网 LinkTree" style="color: white;">陌陌网</a>
+                |
+                <a href="https://bio.link/sgxiaoyao" target="_blank" title="逍遥阁 Bio Page" style="color: white;">逍遥阁</a>
+                |
+                <a href="https://t.me/sea_newsnow" target="_blank" title="新马泰最新时 Telegram"
+                    style="color: white;">新马泰最新时</a> |
+                <a href="https://sgcn.qc52.me/" target="_blank" title="新加坡伴游网 (SGCN)" style="color: white;">新加坡伴游网</a>
+            </p>
+        </footer>
+
     </main>
-  </body>
+
+    <script>
+        $(document).ready(function () {
+            $('.faq-question').click(function () {
+                $(this).next('.faq-answer').slideToggle();
+            });
+
+            $('#faqSearch').on('keyup', function () {
+                var value = $(this).val().toLowerCase();
+
+                // Hide the footer if there's a search term
+                if (value) {
+                    $('#footer').hide();
+                } else {
+                    $('#footer').show();
+                }
+
+                $('.faq-item').each(function () {
+                    var question = $(this).find('.faq-question').text().toLowerCase();
+                    var answer = $(this).find('.faq-answer').text().toLowerCase();
+                    if (question.includes(value) || answer.includes(value)) {
+                        $(this).show();
+                    } else {
+                        $(this).hide();
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+
 </html>
